@@ -1,0 +1,27 @@
+{
+  "home": {
+    "title": "EchoCheck : Votre compagnon de bilan de santé NHS",
+    "intro": "Apprenez, préparez et réservez — désormais traduit et piloté par la voix.",
+    "cta": "Commencer",
+    "voice": {
+      "title": "Navigation vocale",
+      "help": "Dites : « Démarrer », « Descendre », « Monter », « Contraste élevé activé/désactivé », « Texte plus grand », « Texte plus petit », « Passer en anglais/français/espagnol »."
+    },
+    "contrast": "Contraste élevé",
+    "textSize": "Taille du texte",
+    "text": {
+      "normal": "Normal",
+      "large": "Grand"
+    },
+    "lang": "Langue",
+    "mic": {
+      "start": "Activer le micro",
+      "stop": "Couper le micro"
+    },
+    "status": {
+      "listening": "Écoute…",
+      "stopped": "Micro coupé"
+    },
+    "footer": "EchoCheck MVP — Accessibilité d’abord"
+  }
+}

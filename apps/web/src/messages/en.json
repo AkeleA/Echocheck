@@ -1,0 +1,27 @@
+{
+  "home": {
+    "title": "EchoCheck: Your NHS Health Check Companion",
+    "intro": "Learn, prepare and book—now translated and voice-navigable.",
+    "cta": "Get started",
+    "voice": {
+      "title": "Voice navigation",
+      "help": "Say: “Start”, “Scroll down”, “Scroll up”, “High contrast on/off”, “Bigger text”, “Smaller text”, “Change language to English/French/Spanish”."
+    },
+    "contrast": "High contrast",
+    "textSize": "Text size",
+    "text": {
+      "normal": "Normal",
+      "large": "Large"
+    },
+    "lang": "Language",
+    "mic": {
+      "start": "Start mic",
+      "stop": "Stop mic"
+    },
+    "status": {
+      "listening": "Listening…",
+      "stopped": "Mic stopped"
+    },
+    "footer": "EchoCheck MVP — Accessibility-first"
+  }
+}

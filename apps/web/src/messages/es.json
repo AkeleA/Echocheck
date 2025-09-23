@@ -1,0 +1,27 @@
+{
+  "home": {
+    "title": "EchoCheck: Tu compañero para chequeos de salud del NHS",
+    "intro": "Aprende, prepárate y reserva—ahora traducido y con navegación por voz.",
+    "cta": "Empezar",
+    "voice": {
+      "title": "Navegación por voz",
+      "help": "Di: “Iniciar”, “Bajar”, “Subir”, “Alto contraste activar/desactivar”, “Texto más grande”, “Texto más pequeño”, “Cambiar idioma a inglés/francés/español”."
+    },
+    "contrast": "Alto contraste",
+    "textSize": "Tamaño de texto",
+    "text": {
+      "normal": "Normal",
+      "large": "Grande"
+    },
+    "lang": "Idioma",
+    "mic": {
+      "start": "Activar micro",
+      "stop": "Detener micro"
+    },
+    "status": {
+      "listening": "Escuchando…",
+      "stopped": "Micrófono detenido"
+    },
+    "footer": "EchoCheck MVP — Accesibilidad primero"
+  }
+}

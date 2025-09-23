@@ -1,0 +1,83 @@
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Person {
+  id           String   @id @default(uuid())
+  type         String
+  email        String?  @unique
+  locale       String?
+  createdAt    DateTime @default(now())
+
+  AccessibilityPref   AccessibilityPref?
+  CarerLinksAsCarer   CarerLink[] @relation("CarerLinksCarer")
+  CarerLinksAsPatient CarerLink[] @relation("CarerLinksPatient")
+  Responses           Response[]
+  Consents            Consent[]
+}
+
+model CarerLink {
+  id         String    @id @default(uuid())
+  carerId    String
+  patientId  String
+  verifiedAt DateTime?
+
+  carer   Person @relation("CarerLinksCarer", fields: [carerId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  patient Person @relation("CarerLinksPatient", fields: [patientId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+}
+
+model Response {
+  id        String   @id @default(uuid())
+  personId  String
+  subjectId String
+  answers   String   // Changed from Json to String - store JSON as text
+  coded     String   // Changed from Json to String - store JSON as text
+  createdAt DateTime @default(now())
+
+  person Person @relation(fields: [personId], references: [id])
+}
+
+model Appointment {
+  id        String   @id @default(uuid())
+  patientId String
+  slot      DateTime
+  location  String
+  status    String
+  bookedBy  String
+  notes     String?
+  createdAt DateTime @default(now())
+}
+
+model Consent {
+  id          String    @id @default(uuid())
+  personId    String
+  scope       String
+  lawfulBasis String
+  grantedAt   DateTime
+  revokedAt   DateTime?
+
+  person Person @relation(fields: [personId], references: [id])
+}
+
+model AccessibilityPref {
+  id           String  @id @default(uuid())
+  personId     String  @unique
+  highContrast Boolean @default(false)
+  fontScale    String  @default("base")
+
+  person Person @relation(fields: [personId], references: [id])
+}
+
+model AuditEvent {
+  id        String   @id @default(uuid())
+  actorId   String?
+  subjectId String?
+  action    String
+  details   String?  // Changed from Json? to String? - store JSON as text
+  createdAt DateTime @default(now())
+}
