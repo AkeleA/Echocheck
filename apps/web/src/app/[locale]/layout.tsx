@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-// import Link from "next/link";
+import Link from "next/link";
 import "../globals.css";
 
 import en from "../../messages/en.json";
@@ -40,16 +40,15 @@ export default async function LocaleLayout({
               <strong className="tracking-tight">EchoCheck</strong>
             </div>
             <nav className="text-sm">
-              {/* Locale links already present if you prefer; LanguageSwitcher is in-page */}
-              <a className="px-2 opacity-60 hover:opacity-100" href="/en">
+              <Link className="px-2 opacity-60 hover:opacity-100" href="/en">
                 EN
-              </a>
-              <a className="px-2 opacity-60 hover:opacity-100" href="/fr">
+              </Link>
+              <Link className="px-2 opacity-60 hover:opacity-100" href="/fr">
                 FR
-              </a>
-              <a className="px-2 opacity-60 hover:opacity-100" href="/es">
+              </Link>
+              <Link className="px-2 opacity-60 hover:opacity-100" href="/es">
                 ES
-              </a>
+              </Link>
             </nav>
           </div>
         </header>
