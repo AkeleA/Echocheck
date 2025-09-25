@@ -30,34 +30,32 @@ export default async function LocaleLayout({
   setRequestLocale(l);
 
   return (
-    <html lang={l}>
-      <body className="min-h-screen bg-white text-slate-900 antialiased">
-        <header className="w-full border-b bg-white/80 backdrop-blur">
-          <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <span className="inline-grid place-items-center h-8 w-8 rounded-xl bg-emerald-600 text-white font-bold">
-                E
-              </span>
-              <strong className="tracking-tight">EchoCheck</strong>
-            </div>
-            <nav className="text-sm">
-              <Link className="px-2 opacity-60 hover:opacity-100" href="/en">
-                EN
-              </Link>
-              <Link className="px-2 opacity-60 hover:opacity-100" href="/fr">
-                FR
-              </Link>
-              <Link className="px-2 opacity-60 hover:opacity-100" href="/es">
-                ES
-              </Link>
-            </nav>
+    <>
+      <header className="w-full border-b bg-white/80 backdrop-blur">
+        <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <span className="inline-grid place-items-center h-8 w-8 rounded-xl bg-emerald-600 text-white font-bold">
+              E
+            </span>
+            <strong className="tracking-tight">EchoCheck</strong>
           </div>
-        </header>
+          <nav className="text-sm">
+            <Link className="px-2 opacity-60 hover:opacity-100" href="/en">
+              EN
+            </Link>
+            <Link className="px-2 opacity-60 hover:opacity-100" href="/fr">
+              FR
+            </Link>
+            <Link className="px-2 opacity-60 hover:opacity-100" href="/es">
+              ES
+            </Link>
+          </nav>
+        </div>
+      </header>
 
-        <NextIntlClientProvider locale={l} messages={dict[l]}>
-          <InteractionProvider>{children}</InteractionProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+      <NextIntlClientProvider locale={l} messages={dict[l]}>
+        <InteractionProvider>{children}</InteractionProvider>
+      </NextIntlClientProvider>
+    </>
   );
 }

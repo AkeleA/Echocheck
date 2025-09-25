@@ -1,37 +1,43 @@
 {
   "home": {
-    "title": "EchoCheck: Your NHS Health Check Companion",
-    "intro": "Learn, prepare and book—now translated and voice-navigable.",
-    "cta": "Get started",
-    "voice": {
-      "title": "Voice navigation",
-      "help": "Say: “Start”, “Scroll down”, “Scroll up”, “High contrast on/off”, “Bigger text”, “Smaller text”, “Change language to English/French/Spanish”."
-    },
-    "contrast": "High contrast",
+    "title": "Welcome to EchoCheck",
+    "intro": "Voice-controlled accessibility interface",
+    "lang": "Language",
+    "footer": "EchoCheck - Accessible Voice Interface",
+
+    "contrast": "High Contrast",
     "textSize": "Text size",
     "text": {
-      "normal": "Normal",
-      "large": "Large"
+      "large": "Text size increased",
+      "normal": "Text size normal"
     },
-    "lang": "Language",
+
     "mic": {
-      "start": "Start mic",
-      "stop": "Stop mic"
+      "start": "Start microphone",
+      "stop": "Stop microphone"
     },
     "status": {
       "listening": "Listening…",
-      "stopped": "Mic stopped"
+      "stopped": "Mic is off"
     },
-    "footer": "EchoCheck MVP — Accessibility-first",
 
-    "voice.started": "Microphone started",
-    "voice.stopped": "Microphone stopped",
-    "voice.step": "Step {step}",
-    "voice.placeholder.listening": "Say something…",
-    "voice.placeholder.idle": "Tap mic to speak",
-    "home.voice.settings.show": "Voice settings",
-    "home.voice.settings.hide": "Hide voice settings",
-    "home.voice.settings.note": "Voice feedback uses your browser’s system voice.",
-    "home.voice.settings.simple": "Advanced rate/pitch controls are hidden to keep the UI simple."
+    "voice": {
+      "title": "Voice Commands",
+      "settings": {
+        "show": "Show Settings",
+        "hide": "Hide Settings",
+        "note": "Voice settings note",
+        "simple": "Simple mode"
+      }
+    }
+  },
+  "voice": {
+    "started": "Voice recognition started",
+    "stopped": "Voice recognition stopped",
+    "step": "Voice step",
+    "placeholder": {
+      "listening": "Listening...",
+      "idle": "Click to start voice recognition"
+    }
   }
 }

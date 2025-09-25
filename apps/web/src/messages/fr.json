@@ -1,36 +1,43 @@
 {
   "home": {
-    "title": "EchoCheck : Votre compagnon de bilan de santé NHS",
-    "intro": "Apprenez, préparez et réservez — désormais traduit et piloté par la voix.",
-    "cta": "Commencer",
-    "voice": {
-      "title": "Navigation vocale",
-      "help": "Dites : « Démarrer », « Descendre », « Monter », « Contraste élevé activé/désactivé », « Texte plus grand », « Texte plus petit », « Passer en anglais/français/espagnol »."
-    },
+    "title": "Bienvenue sur EchoCheck",
+    "intro": "Interface d'accessibilité contrôlée par la voix",
+    "lang": "Langue",
+    "footer": "EchoCheck - Interface vocale accessible",
+
     "contrast": "Contraste élevé",
     "textSize": "Taille du texte",
     "text": {
-      "normal": "Normal",
-      "large": "Grand"
+      "large": "Taille du texte augmentée",
+      "normal": "Taille du texte normale"
     },
-    "lang": "Langue",
+
     "mic": {
-      "start": "Activer le micro",
-      "stop": "Couper le micro"
+      "start": "Démarrer le micro",
+      "stop": "Arrêter le micro"
     },
     "status": {
       "listening": "Écoute…",
-      "stopped": "Micro coupé"
+      "stopped": "Micro désactivé"
     },
-    "footer": "EchoCheck MVP — Accessibilité d’abord",
-    "voice.started": "Microphone activé",
-    "voice.stopped": "Microphone arrêté",
-    "voice.step": "Étape {step}",
-    "voice.placeholder.listening": "Parlez…",
-    "voice.placeholder.idle": "Touchez le micro pour parler",
-    "home.voice.settings.show": "Paramètres vocaux",
-    "home.voice.settings.hide": "Masquer les paramètres vocaux",
-    "home.voice.settings.note": "Le retour vocal utilise la voix système de votre navigateur.",
-    "home.voice.settings.simple": "Les commandes avancées de débit/hauteur sont masquées pour simplifier l'interface utilisateur."
+
+    "voice": {
+      "title": "Commandes vocales",
+      "settings": {
+        "show": "Afficher les paramètres",
+        "hide": "Masquer les paramètres",
+        "note": "Note sur les paramètres vocaux",
+        "simple": "Mode simple"
+      }
+    }
+  },
+  "voice": {
+    "started": "Reconnaissance vocale démarrée",
+    "stopped": "Reconnaissance vocale arrêtée",
+    "step": "Étape vocale",
+    "placeholder": {
+      "listening": "Écoute...",
+      "idle": "Cliquez pour démarrer la reconnaissance vocale"
+    }
   }
 }

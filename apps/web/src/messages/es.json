@@ -1,36 +1,43 @@
 {
   "home": {
-    "title": "EchoCheck: Tu compañero para chequeos de salud del NHS",
-    "intro": "Aprende, prepárate y reserva—ahora traducido y con navegación por voz.",
-    "cta": "Empezar",
-    "voice": {
-      "title": "Navegación por voz",
-      "help": "Di: “Iniciar”, “Bajar”, “Subir”, “Alto contraste activar/desactivar”, “Texto más grande”, “Texto más pequeño”, “Cambiar idioma a inglés/francés/español”."
-    },
-    "contrast": "Alto contraste",
-    "textSize": "Tamaño de texto",
-    "text": {
-      "normal": "Normal",
-      "large": "Grande"
-    },
+    "title": "Bienvenido a EchoCheck",
+    "intro": "Interfaz de accesibilidad controlada por voz",
     "lang": "Idioma",
+    "footer": "EchoCheck - Interfaz de voz accesible",
+
+    "contrast": "Alto contraste",
+    "textSize": "Tamaño del texto",
+    "text": {
+      "large": "Tamaño de texto aumentado",
+      "normal": "Tamaño de texto normal"
+    },
+
     "mic": {
-      "start": "Activar micro",
-      "stop": "Detener micro"
+      "start": "Activar micrófono",
+      "stop": "Detener micrófono"
     },
     "status": {
       "listening": "Escuchando…",
-      "stopped": "Micrófono detenido"
+      "stopped": "Micrófono desactivado"
     },
-    "footer": "EchoCheck MVP — Accesibilidad primero",
-    "voice.started": "Micrófono activado",
-    "voice.stopped": "Micrófono desactivado",
-    "voice.step": "Paso {step}",
-    "voice.placeholder.listening": "Hable…",
-    "voice.placeholder.idle": "Toque el micrófono para hablar",
-    "home.voice.settings.show": "Ajustes de voz",
-    "home.voice.settings.hide": "Ocultar ajustes de voz",
-    "home.voice.settings.note": "La retroalimentación de voz utiliza la voz del sistema de su navegador.",
-    "home.voice.settings.simple": "Los controles avanzados de velocidad/tono están ocultos para mantener la interfaz de usuario simple."
+
+    "voice": {
+      "title": "Comandos de voz",
+      "settings": {
+        "show": "Mostrar configuración",
+        "hide": "Ocultar configuración",
+        "note": "Nota sobre la configuración de voz",
+        "simple": "Modo simple"
+      }
+    }
+  },
+  "voice": {
+    "started": "Reconocimiento de voz iniciado",
+    "stopped": "Reconocimiento de voz detenido",
+    "step": "Paso de voz",
+    "placeholder": {
+      "listening": "Escuchando...",
+      "idle": "Haga clic para iniciar el reconocimiento de voz"
+    }
   }
 }
