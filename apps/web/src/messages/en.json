@@ -22,6 +22,16 @@
       "listening": "Listening…",
       "stopped": "Mic stopped"
     },
-    "footer": "EchoCheck MVP — Accessibility-first"
+    "footer": "EchoCheck MVP — Accessibility-first",
+
+    "voice.started": "Microphone started",
+    "voice.stopped": "Microphone stopped",
+    "voice.step": "Step {step}",
+    "voice.placeholder.listening": "Say something…",
+    "voice.placeholder.idle": "Tap mic to speak",
+    "home.voice.settings.show": "Voice settings",
+    "home.voice.settings.hide": "Hide voice settings",
+    "home.voice.settings.note": "Voice feedback uses your browser’s system voice.",
+    "home.voice.settings.simple": "Advanced rate/pitch controls are hidden to keep the UI simple."
   }
 }

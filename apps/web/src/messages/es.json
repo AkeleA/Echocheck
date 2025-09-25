@@ -22,6 +22,15 @@
       "listening": "Escuchando…",
       "stopped": "Micrófono detenido"
     },
-    "footer": "EchoCheck MVP — Accesibilidad primero"
+    "footer": "EchoCheck MVP — Accesibilidad primero",
+    "voice.started": "Micrófono activado",
+    "voice.stopped": "Micrófono desactivado",
+    "voice.step": "Paso {step}",
+    "voice.placeholder.listening": "Hable…",
+    "voice.placeholder.idle": "Toque el micrófono para hablar",
+    "home.voice.settings.show": "Ajustes de voz",
+    "home.voice.settings.hide": "Ocultar ajustes de voz",
+    "home.voice.settings.note": "La retroalimentación de voz utiliza la voz del sistema de su navegador.",
+    "home.voice.settings.simple": "Los controles avanzados de velocidad/tono están ocultos para mantener la interfaz de usuario simple."
   }
 }

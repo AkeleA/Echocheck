@@ -22,6 +22,15 @@
       "listening": "Écoute…",
       "stopped": "Micro coupé"
     },
-    "footer": "EchoCheck MVP — Accessibilité d’abord"
+    "footer": "EchoCheck MVP — Accessibilité d’abord",
+    "voice.started": "Microphone activé",
+    "voice.stopped": "Microphone arrêté",
+    "voice.step": "Étape {step}",
+    "voice.placeholder.listening": "Parlez…",
+    "voice.placeholder.idle": "Touchez le micro pour parler",
+    "home.voice.settings.show": "Paramètres vocaux",
+    "home.voice.settings.hide": "Masquer les paramètres vocaux",
+    "home.voice.settings.note": "Le retour vocal utilise la voix système de votre navigateur.",
+    "home.voice.settings.simple": "Les commandes avancées de débit/hauteur sont masquées pour simplifier l'interface utilisateur."
   }
 }

@@ -6,6 +6,7 @@ import "../globals.css";
 import en from "../../messages/en.json";
 import fr from "../../messages/fr.json";
 import es from "../../messages/es.json";
+import { InteractionProvider } from "../../context/InteractionContext";
 
 const dict = { en, fr, es } as const;
 type Locale = keyof typeof dict;
@@ -54,7 +55,7 @@ export default async function LocaleLayout({
         </header>
 
         <NextIntlClientProvider locale={l} messages={dict[l]}>
-          {children}
+          <InteractionProvider>{children}</InteractionProvider>
         </NextIntlClientProvider>
       </body>
     </html>
